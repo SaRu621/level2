@@ -1,0 +1,18 @@
+mode: set
+task2/pkg/service.go:8.40,17.34 6 1
+task2/pkg/service.go:45.2,47.23 2 1
+task2/pkg/service.go:51.2,51.29 1 1
+task2/pkg/service.go:56.2,56.16 1 1
+task2/pkg/service.go:17.34,18.32 1 1
+task2/pkg/service.go:23.3,23.41 1 1
+task2/pkg/service.go:18.32,20.12 2 1
+task2/pkg/service.go:23.41,26.25 2 1
+task2/pkg/service.go:30.4,30.31 1 1
+task2/pkg/service.go:36.4,39.16 3 1
+task2/pkg/service.go:26.25,28.5 1 1
+task2/pkg/service.go:30.31,31.26 1 1
+task2/pkg/service.go:31.26,33.6 1 1
+task2/pkg/service.go:40.9,42.4 1 1
+task2/pkg/service.go:47.23,49.3 1 1
+task2/pkg/service.go:51.29,52.24 1 1
+task2/pkg/service.go:52.24,54.4 1 1
