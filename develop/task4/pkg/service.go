@@ -39,6 +39,7 @@ func isAnagram(str1, str2 string) bool {
 	return true
 }
 
+//Anagram -- main function for task 4
 func Anagram(arr *[]string) map[string][]string {
 	anagrams := make(map[string][]string)
 
