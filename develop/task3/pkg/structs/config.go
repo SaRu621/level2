@@ -20,7 +20,7 @@ type Config struct {
 // ParseArgs -- метод, позволяющий собирать конфиг из данных консоли
 func (cfg *Config) ParseArgs() {
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, "Инструкция %s", os.Args[0])
+		fmt.Fprintf(os.Stderr, "Инструкция %s\n", os.Args[0])
 		flag.PrintDefaults()
 	}
 
@@ -38,10 +38,6 @@ func (cfg *Config) ParseArgs() {
 	}
 
 	args := flag.Args()
-
-	for _, val := range args {
-		fmt.Println(val)
-	}
 
 	if len(args) > 2 { // Более двух аргументов -- выход из программы
 		flag.Usage()

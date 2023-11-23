@@ -1,0 +1,6 @@
+1 Ruslan 23
+2 Dasha 26
+4 Tamir 22
+3 Emin 10
+4 Tamir 22
+5 Unknown 110

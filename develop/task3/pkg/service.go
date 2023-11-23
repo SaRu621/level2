@@ -62,10 +62,10 @@ func writeFile(cfg structs.Config, data [][]string) error {
 }
 
 // ManSort -- сортировка файла
-func ManSort() error {
-	var cfg structs.Config
+func ManSort(cfg structs.Config) error {
+	//var cfg structs.Config
 
-	cfg.ParseArgs() // парсим аргументы из консоли
+	//cfg.ParseArgs() // парсим аргументы из консоли
 
 	data, err := readFile(cfg) // читаем файл
 
