@@ -16,7 +16,7 @@ type Config struct {
 func (cfg *Config) ParseConfig() {
 	var err error
 
-	flag.BoolVar(&cfg.Rec, " r", false, "Рекурсивный проход по ссылкам <a>")
+	flag.BoolVar(&cfg.Rec, "r", false, "Рекурсивный проход по ссылкам <a>")
 	flag.IntVar(&cfg.Rps, "rps", 1000, "кол-во запросов в секунду")
 	flag.Parse()
 

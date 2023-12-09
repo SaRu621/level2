@@ -14,19 +14,7 @@ import (
 )
 
 func SaveFile(p string, b []byte) error {
-	dir, file := path.Split(p)
-
-	if file == "" {
-		file = "index.html"
-	}
-
-	if err := os.MkdirAll(dir, os.FileMode(0644)); err != nil {
-		return err
-	}
-
-	p = path.Join(dir, file)
-
-	if err := os.WriteFile(p, b, 0644); err != nil {
+	if err := os.WriteFile("/home/rus/Desktop/"+p, b, 0644); err != nil {
 		return err
 	}
 
@@ -41,10 +29,10 @@ func Wget(cfg *config.Config, logger *log.Logger) {
 
 	err := c.Limit(
 		&colly.LimitRule{
-			Delay: time.Duration(int(time.Second) / cfg.Rps),
+			DomainGlob: "*",
+			Delay:      time.Duration(int(time.Second) / cfg.Rps),
 		},
 	)
-
 	if err != nil {
 		log.Fatalln(err)
 	}
